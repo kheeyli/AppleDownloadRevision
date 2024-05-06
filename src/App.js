@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import AppleDownload from './AppleDownload';
+import AppleDownloadChinese from './AppleDownloadChinese'; 
+import './App.css'; 
 
 function App() {
+  const [language, setLanguage] = useState('english'); 
+  const handleLanguageChange = (selectedLanguage) => {
+    setLanguage(selectedLanguage);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <select className="language-select" value={language} onChange={(e) => handleLanguageChange(e.target.value)}>
+        <option value="english">English</option>
+        <option value="chinese">Chinese</option>
+      </select>
+
+
+      {/*based on selected language */}
+      {language === 'english' ? <AppleDownload /> : <AppleDownloadChinese />}
     </div>
   );
 }

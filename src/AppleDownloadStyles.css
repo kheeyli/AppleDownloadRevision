@@ -1,0 +1,179 @@
+
+.logo {
+    width: 39px;
+    height: 45px;
+    margin-bottom: 1px;
+    margin-left: 90px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: transparent;
+    color: #fff;
+   
+}
+
+.header-right {
+    padding-right: 90px;
+    padding-top: 13px;
+}
+
+.header-right a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none; 
+}
+
+.header-right a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 1.5px;
+}
+
+.come-and-play {
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    position: absolute;
+    left: 285px;
+    top: -1px
+}
+
+.container{
+    align-items: center;
+    background-color:#F2F3F4  ;
+    height: 100%;
+    padding: 1rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+}
+.container1{
+    align-items: center;
+    background-color:white;
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 70px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+.webcontainer{
+    background-color:white;
+    padding: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.dlcontainer{
+    background-color:white;
+    padding: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 70px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.Info{
+    color:#333;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.choice {
+    font-size: 25px;
+    font-weight:500;
+    text-align: center;
+}
+
+.ways {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.note {
+    font-size: 19px;
+    font-style: italic;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+
+.weblink{
+    text-align: center;
+}
+
+.weblink img {
+    width: 13rem;
+    height: 4.5rem;
+    text-align: center;
+    padding: 25px;
+    padding-top: 0px;
+}
+
+.underline{
+    border-bottom: 2px solid lightgrey;
+    border-radius: 4px;
+}
+
+.steps{
+    text-align: center;
+}
+
+.step{
+    text-align: center;
+    font-size: 23px;
+}
+
+.details {
+    font-size: 21px;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+
+
+.img1, .img2 {
+    width: 450px;
+    height: 550px;
+}
+.img4, .img3 {
+    width: 700px;
+    height: 350px;
+}
+.img5  {
+    width: 800px;
+    height: 300px;
+}
+
+.img6{
+    width: 550px;
+    height: 800px;
+}
+
+
+#footer {
+    background-color: transparent;
+    color: #fff; 
+    padding: 40px;
+    text-align: center; 
+}
+
+#footer p {
+    margin: 0; 
+}
