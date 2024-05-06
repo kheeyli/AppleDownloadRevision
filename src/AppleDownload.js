@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './AppleDownloadStyles.css'; 
 import logo from './icons/logo.png';
-import webdl1 from './icons/webdl1.png';
-import webdl2 from './icons/webdl2.png';
+import webdl2 from './icons/webdl1.png';
+import webdl1 from './icons/webdl2.png';
 import engimg from './icons/engimg.png';
 import engimg1 from './icons/engimg1.png';
 import engimg2 from './icons/engimg2.png';
@@ -13,6 +13,15 @@ import engimg6 from './icons/engimg6.png';
 
 
 const AppleDownload = () => {
+
+    const link1 = () => {
+        window.location.href = "https://h5.shafayouxi.org/"; // Redirect to the specified URL
+      };
+
+      const link2 = () => {
+        window.location.href = "https://h5.laiwanpai.com/"; // Redirect to the specified URL
+      };
+
 
     return (
         <div>
@@ -51,9 +60,16 @@ const AppleDownload = () => {
                     
 
                     <div className="weblink">
-                        <img src={webdl1} alt="Website Link" />
+                        <a href="https://h5.shafayouxi.org/" target="_blank" rel="noopener noreferrer" onClick={link1}>
+                            <img src={webdl1} alt="Website Link" />
+                        </a>
+
+                        <a href="https://h5.laiwanpai.com/" target="_blank" rel="noopener noreferrer" onClick={link2}>
                         <img src={webdl2} alt="Website Link" />
+                        </a> 
                     </div>
+
+                    
                 </div>
 
                 <div className="dlcontainer">

@@ -13,6 +13,15 @@ import chnsimg6 from './icons/Chinese-img4.png';
 
 
 const AppleDownloadChinese = () => {
+
+    const link1 = () => {
+        window.location.href = "https://h5.shafayouxi.org/"; // Redirect to the specified URL
+      };
+
+      const link2 = () => {
+        window.location.href = "https://h5.laiwanpai.com/"; // Redirect to the specified URL
+      };
+
     return (
         <div>
             <header>
@@ -46,9 +55,14 @@ const AppleDownloadChinese = () => {
                         <p class ="details"> <i> 点击网页链接以访问它：</i> </p> 
                     
 
-                    <div className="weblink">
-                        <img src={webdl1} alt="Website Link" />
+                        <div className="weblink">
+                        <a href="https://h5.shafayouxi.org/" target="_blank" rel="noopener noreferrer" onClick={link1}>
+                            <img src={webdl1} alt="Website Link" />
+                        </a>
+
+                        <a href="https://h5.laiwanpai.com/" target="_blank" rel="noopener noreferrer" onClick={link2}>
                         <img src={webdl2} alt="Website Link" />
+                        </a> 
                     </div>
                 </div>
 
